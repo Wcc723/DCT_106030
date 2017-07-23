@@ -39,10 +39,10 @@
         </h1>
         <h3 [innerText]="subtitle"
           [class.red]="showRed"
-          [style.font-size]="'40px'"></h3>
+          [style.font-size]="'14px'"></h3>
       </div>
 
-      <div id="social-icons" class="pull-right social-icon">
+      <div *ngIf="showRed" id="social-icons" class="pull-right social-icon">
         <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
               <img src="/assets/images/facebook.png">
             </a>

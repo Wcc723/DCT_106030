@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     console.log(evt);
     if (evt.ctrlKey) {
       this.sitename = 'The Will Will Web';
-      this.showRed = true;
+      this.showRed = !this.showRed;
     }
   }
 

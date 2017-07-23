@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +11,6 @@ export class AppComponent {
 
   clearKeyword($event: KeyboardEvent) {
     console.log($event);
-    if ($event.keyCode === 27) {
-      this.keyword = '';
-    }
+    this.keyword = '';
   }
 }

@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { ArticleComponent } from './article/article.component';
 import { MaskPipe } from './mask.pipe';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { MaskPipe } from './mask.pipe';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

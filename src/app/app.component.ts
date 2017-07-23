@@ -98,4 +98,9 @@ export class AppComponent {
   doSearch(value: string) {
     this.keyword = value;
   }
+
+  deleteArticle(item) {
+    const idx = this.data.indexOf(item);
+    this.data.splice(idx, 1);
+  }
 }

@@ -9,7 +9,7 @@
 
         <!-- Article START-->
         <app-article
-          [item]="article"
+          [item]="article" (delete)="deleteArticle($event)"
           *ngFor="let article of data"></app-article>
         <!-- Article END-->
 

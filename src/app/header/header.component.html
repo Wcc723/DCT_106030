@@ -28,7 +28,8 @@
       <img src="/assets/images/logo.png"
         class="pull-left logo"
         [title]="sitename"
-        [attr.data-my]="sitename">
+        [attr.data-my]="sitename"
+        (click)="changeTitle($event)">
 
       <div class="pull-left">
         <h1>

@@ -9,8 +9,8 @@
 
         <!-- Article START-->
         <app-article
-          [item]="article" (delete)="deleteArticle($event)"
-          *ngFor="let article of data"></app-article>
+          [item]="article"
+          *ngFor="let article of datasvc.data"></app-article>
         <!-- Article END-->
 
       </div>

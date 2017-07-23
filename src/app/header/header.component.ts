@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
   siteurl = 'http://blog.miniasp.com/';
   subtitle = '記載著 Will 在網路世界的學習心得與技術分享';
 
+  showRed = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -20,6 +22,7 @@ export class HeaderComponent implements OnInit {
     console.log(evt);
     if (evt.ctrlKey) {
       this.sitename = 'The Will Will Web';
+      this.showRed = true;
     }
   }
 

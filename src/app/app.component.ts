@@ -13,4 +13,8 @@ export class AppComponent {
     console.log($event);
     this.keyword = '';
   }
+
+  doSearch($event: KeyboardEvent) {
+    this.keyword = ($event.target as HTMLInputElement).value;
+  }
 }

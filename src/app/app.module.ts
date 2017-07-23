@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +21,7 @@ import { DataService } from './data.service';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule
   ],
   providers: [DataService],

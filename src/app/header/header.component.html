@@ -37,7 +37,9 @@
             {{ sitename }}
           </a>
         </h1>
-        <h3 [ngClass]="{ 'red': showRed }" [innerText]="subtitle"></h3>
+        <h3 [innerText]="subtitle"
+          [class.red]="showRed"
+          [style.font-size]="'40px'"></h3>
       </div>
 
       <div id="social-icons" class="pull-right social-icon">

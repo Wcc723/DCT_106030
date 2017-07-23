@@ -12,6 +12,7 @@ export class AppComponent {
   clearKeyword($event: KeyboardEvent) {
     console.log($event);
     this.keyword = '';
+    ($event.target as HTMLInputElement).value = '';
   }
 
   doSearch(value: string) {
